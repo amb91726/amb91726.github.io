@@ -1,0 +1,515 @@
+*{
+    font-family: 微軟正黑體;
+   }
+   body{
+    margin: 0;
+   }
+   .img-fluid{
+     max-width: 100%;
+     display: block;
+   }
+   .clear{
+     clear:both;
+   }
+   /* 封面圖 */
+   .cover_bg{
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-image: url("../img/00-banner/banner京.jpg"); 
+    background-size: cover;
+    background-position: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+   }
+   .logo_kyoto{
+    height: 270px;
+   }
+   /* 導覽列 */
+   .navbar{
+    width: 100%;
+    height: 70px;
+    background-color:black;
+    position: relative;
+   }
+   .logo_travel{
+    float: left;
+   }
+   .logo_travel img{
+       height: 55px;
+       margin: 7.5px 15px;   
+   }
+   .navbar  ul  li{
+    display: inline-block;
+    color: white;
+    line-height: 70px;
+    padding:0 15px;
+   }
+   .navbar  ul{
+    margin: 0;
+    float: right;
+   }
+   .navbar  ul  li:hover{
+    background-color: white;
+    color: #b1062c;
+    font-weight: bold;
+   }
+   .cover:hover {
+     opacity: 0;
+   }
+   /* 熱門景點 */
+   .redback{
+     padding-bottom: 100px;
+    background-color:#b1062c;
+    z-index: -1;
+   }
+   .container{
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+   
+   }
+   .section{
+    padding-top: 100px;
+   }
+   .title{
+    font-size: 48px;
+    padding-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+   }
+   .title_2{
+    font-size: 48px;
+    padding-top: 50px;
+    text-align: center;
+    font-weight: bold;  
+   }
+   .title_3{
+    font-size: 48px;
+    padding-top: 200px;
+    text-align: center;
+    font-weight: bold;  
+   }
+   .content{
+    font-size: 18px;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+   }
+  .content2{
+    font-size: 18px;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+   }
+   .subtitle{
+    font-size: 36px;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+   }
+   .subtitle2{
+    font-size: 36px;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+   }
+   .osaka_pic{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    margin-top: 25px;
+   }
+   .redcircle{
+       width: 230px;
+       height: 230px;
+       position: absolute;
+       top: 26px;
+       right:50%;
+       transform: translateX(50%);
+        z-index: -1;
+   }
+   .outer{
+       width: 100%;
+       height: 613px;
+       background-color: #b1062c;
+       margin-bottom: 100px;
+       overflow: hidden;
+   }
+   .outer .left{
+       width: 50%;
+       height: 100%;
+       background-color: #111;
+       float: left;
+       position: relative;
+   }
+   .outer .right{
+    width: 50%;
+    height: 100%;
+    background-color: #222;
+    float: left;
+    position: relative;
+   }
+   .outer .top{
+    width: 100%;
+    height: 50%;
+    background-color: #555;
+    position: relative;
+   }
+   .outer .bottom{
+    width: 100%;
+    height: 50%;
+    background-color: #777;
+    position: relative;
+   }
+   .outer .sm_left{
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    float: left;
+    position: relative;
+   }
+   .outer .sm_right{
+    width: 50%;
+    height: 100%;
+    background-color: #666;
+    float: left;
+    position: relative;
+   }
+   /* 機場交通 */
+   .cover{
+       width: 100%;
+       height: 100%;
+       background-color:#222;
+       position: absolute;
+       opacity: 0.8;
+   }
+  .text{
+       position: absolute;
+       font-size: 36px;
+       font-weight: bold;
+       color: white;
+       opacity: 1; 
+       z-index: 1;
+       position: absolute;
+       top: 50%;
+       left:50%;
+       transform: translate(-50%,-50%);
+   }
+   .background{
+       background-color:#F3ECE0;
+       width: 100%; 
+      /*  margin-top:100px; */
+       /* z-index: -1; */
+   }
+   .airportmap{
+       text-align: center;
+   }
+   .row{
+       display: flex;
+       justify-content: space-between;
+       padding:0 80px;
+   }
+   .square{
+       width: 300px;
+       height: 220px;
+       position: relative;
+
+   }
+   .square_r{
+      background-color: #FF5C00; 
+   }
+   .square_m{
+      background-color: #1874C3; 
+   }
+   .square_l{
+      background-color: #293EB3; 
+   }
+   .logo_train{
+       float: left;
+       padding:10px;
+   }
+   .train_name{
+       font-size: 18px;
+       font-weight: bold;
+       color: white;
+       line-height: 2;
+   }
+   .trainpic{
+       width: 300px;
+       height: 200px; 
+       position: absolute;
+       background-position: center;
+       top: 60px;
+       left: 30px;
+   }
+   .trainpic1{
+       background-image: url("../img/03-機場交通/Nankaipic-03.jpg");
+    }
+    .trainpic2{  
+        background-image: url("../img/03-機場交通/JRpic-04.jpg");
+     }
+     .trainpic3{
+        background-image: url("../img/03-機場交通/KIXpic-05.jpg");
+     }
+ .rectangle{  
+    width: 300px;
+    height: 100px;
+    background-color: #FF5C00;
+    float: left;
+    margin:80px 0px;
+    position: relative;
+}
+.rectangle2{
+    background-color: #1874C3;
+  }
+  .rectangle3{
+    background-color: #293EB3;
+  }
+  .circle1 , .circle2 ,.circle2_inner{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:#F3ECE0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%);
+  }
+  .circle2, .circle2_inner{
+    top: 0;
+    left: inherit;
+    right: 0 ;
+    transform: translate(50%, -50%);
+  }
+  .circle2_inner{
+    width: 45px;
+    height: 45px;
+    top: 50%;
+    left: 50%;
+    background-color: #FF5C00;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+  .mid{
+    background-color: #1874C3;
+  }
+  .last{
+    background-color: #293EB3;
+  }
+  .circle2_inner_sm{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+   
+    background-color: #fff;
+
+  }
+  .text_title{
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    padding:10px 0;
+  }
+  .text_content{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+  }
+/* 必備知識 */
+.know{
+  float: left;
+  margin-top: 40px;
+ /*  padding: 0 30px; */
+  box-sizing: border-box;
+}
+.know1{
+  width: 225px;
+  height: 300px;
+  background-image: url("../img/04-必備知識/know1-03.jpg");
+  position: relative;
+}
+.know2{
+  width: 225px;
+  height: 300px;
+  background-image: url("../img/04-必備知識/know2.jpg");
+  position: relative;
+}
+.know3{
+  width: 225px;
+  height: 300px;
+  background-image: url("../img/04-必備知識/know3.jpg");
+  position: relative;
+}
+.know4{
+  width: 225px;
+  height: 300px;
+  background-image: url("../img/04-必備知識/know4.jpg");
+  position: relative;
+}
+.knowtext{
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  background-color: navy;
+  opacity: 0.7;
+  color: white;
+  text-align: center;
+  transition: 1s linear 0s;
+  overflow: hidden;
+}
+.know:hover .knowtext{
+        height: 100%; 
+    }
+/* 天氣資訊 */
+.big_chart{
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+.templeback{
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.table{
+  width: 50%;
+  height: 300px;
+ /*  background-color:white; */
+  float: left;
+ margin-top:40px;
+ position: relative;
+
+}
+.chart{
+position: absolute;
+top: 45px;
+left: 108px;
+}
+.season{
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute;
+  top: -15px;
+  left: 108px;
+  color:white;
+}
+/* 實用設施 */
+/* .border{
+  width: 400px;
+  height: 600px;
+  border: 2px solid black;
+  float: left;
+} */
+/* 京阪特色 */
+.cherry{
+  width: 100%;
+  height: 350px;
+  position: absolute;
+}
+.swiper-container {
+      width: 60%;
+      float: left;
+    }
+    .maple {
+      width: 60%;
+      float: right;
+    }
+.swiper-slide {
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  .cherry_info{
+    width: 500px;
+    height: 500px;
+    background-color: #FDDEE0;
+    float: right;
+    transform: translate(-100px,100px);
+  }
+  .cherrysm{
+    width:100px;
+    height: 100px;
+    background-image: url('../img/cherrysm-05.png');
+    background-size: cover;
+    position: absolute;
+    left: 400px;
+    bottom: 0px;
+  }
+  .cherry_swiper{
+    height: 650px;
+  }
+  .info{
+    text-align: center;
+  }
+  .info1{
+    /* text-align: center; */
+    float: left;
+    position: absolute;
+    left: 135px;
+  }
+  .info2{
+    /* text-align: center; */
+    float: left;
+    position: absolute;
+    right:125px;
+  }
+  .seasont{
+     text-align: center;
+  }
+  .maple_info{
+    width: 500px;
+    height: 500px;
+    background-color: #E9B9AB;
+    float: right;
+    transform: translate(-100px,100px);
+  }
+  .footer{
+    width: 100%;
+    height: 200px;
+    background-color:black;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_logo{
+    width: 230px;
+    height: 90px;
+  }
+  hr{
+    width: 100%;
+    margin-top:40px;
+  }
+  .copyright{
+    color:white;
+    margin-top:5px;
+  }
